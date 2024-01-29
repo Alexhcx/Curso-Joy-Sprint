@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+    --main-font: 'Quicksand', sans-serif;
+    --text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+body{
+    /* background-color: rgba(10, 12, 81, 0.776); */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px 10px 5px;
+    background-color: rgb(10, 10, 85);
+    color:white;
+    border-bottom: 1px solid black;
+}
+header div{
+    padding-left: 10px;
+}
+
+header h1{
+    font-size: 25px;
+    font-family: var(--main-font);
+    font-weight: bolder;
+    padding-left: 5px;
+    text-shadow: var(--text-shadow)
+}
+
+.logo-site{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+nav, nav ol{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    font-family: var(--main-font);
+    font-weight: bold;
+}
+
+nav li{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px 0px 10px;
+    text-shadow: var(--text-shadow);
+}
+
+nav li:hover{
+    background-color: blue;
+    border-radius: 20px;
+}
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(10, 10, 85);
+    color: white;
+}
+
+#footer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+#footer nav div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer nav div a{
+    padding: 8px;
+}
+
+/*-- Pagina: histotrias contadas --*/
+
+.body-background {
+    background-image: url('/img/redwoodbackground.jpg');
+    background-repeat: no-repeat; /* A imagem de fundo não será repetida */
+    background-position: center; /* A imagem de fundo será centralizada */
+    background-size: cover; /* A imagem de fundo será redimensionada para cobrir todo o elemento */
+}
+
+.historias-main{
+    display: flex;
+}
+
+.historias-main aside{
+    display: block;
+    font-family: var(--main-font);
+    text-align: center;
+    padding: 10px;
+}
+
+.historias-main aside h3{
+    padding: 5px;
+}
+
+.historias-main aside div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.aside-img{
+    padding: 10px 10px 5px 10px;
+    border-radius: 100%;
+}
+
+#livro-aberto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#livro-aberto span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+    max-width: 55%; 
+    padding: 10px;
+    /* text-align: justify;
+    font-family: 'MedievalSharp', sans-serif;
+    font-size: 22px;
+    font-weight: 900; */
+}
+
+#livro-aberto span p {
+    text-align: justify;
+    font-family: 'MedievalSharp', sans-serif;
+    font-size: 1vw; /* Ajusta o tamanho da fonte para 2% da largura da janela */
+    font-weight: 900;
+}
+
+.livro-background-img{
+    z-index: 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.paginas-livro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%;
+    height: auto; */
+    position: absolute;
+    z-index: 1;
+}
+
+.paginas-livro div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.paginas-livro div:nth-child(1) img{
+    margin-right: 23px
+}
+
+.paginas-livro div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.paginas-livro img {
+    width: 50%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#historias-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#historias-footer img {
+    object-fit: contain;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+/*-- fim Pagina: histotrias contadas --*/
+
+/*-- Pagina: fale conosco --*/
+#faleconosco{
+    display: flex;
+    justify-content: space-around;
+}
+
+#faleconosco div:nth-child(1){
+    width: 40%;
+}
+
+.perguntas-frequentes{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 20px 20px;
+    padding: 30px 30px 30px 50px;
+    color:white;
+    background-color: rgb(4, 55, 74);
+    border-radius: 20px;
+    text-align: justify;
+}
+
+.form-perguntas{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 20px 20px;
+    padding: 30px 30px 30px 50px;
+    color:white;
+    background-color: rgb(4, 55, 74);
+    border-radius: 20px;
+    text-align: justify;
+}
+
+.form-perguntas h2, .perguntas-frequentes h2 {
+    padding: 10px 0px 20px 0px;
+}
+
+.perguntas-frequentes li{
+    padding: 5px 0px 5px 0px;
+}
+
+.perguntas-frequentes li p{
+    padding: 5px 0px 0px 0px;
+}
+
+input{
+    min-width: 300px;
+    padding: 2px;
+    font-size: 16px;
+    font-weight: bolder; 
+}
+
+textarea{
+    min-width: 400px; 
+    min-height: 300px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bolder;  
+}
+
+/*--fim Pagina: fale conosco --*/
+
+/*-- Pagina: Sobre nos --*/
+
+#main-quemsomos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 10px;
+}
+
+#main-quemsomos section{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    padding: 10px;
+    background-color: rgb(4, 55, 74);
+    color: white;
+    border-radius: 10px;
+}
+
+#main-quemsomos section p{
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#main-quemsomos section:nth-child(3){
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-quemsomos {
+    display: block;
+    margin: auto;
+    width: 18%;
+    padding: 40px;
+}
+
+/*-- Fim Pagina: Sobre nos --*/
+
+/*-- Pagina: inicio --*/
+
+#inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.introducao{
+    display: block;
+    margin: auto;
+    width: 30%;
+    text-align: justify;
+    background-color: rgb(4, 55, 74);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.historias-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.historias-principal section h2{
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.historias-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.historias-filho{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.historias-jogos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+}
+
+.historias-jogos p{
+    padding: 5px;
+}

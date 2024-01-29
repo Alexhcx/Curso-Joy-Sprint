@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Educa+ - Fale Conosco</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
     <header>
-        <h1>
-            Educa+
-        </h1>
+        <div class="logo-site">
+            <img src="/img/logo-site-editado.png" style="height: 30px;" alt="">
+            <h1>educa+</h1>
+        </div>
         <nav>
             <ol>
                 <li><a href="../index.html">Inicio</a></li>
@@ -21,50 +23,66 @@
             </ol>
         </nav>
     </header>
-    <main>
+    <main id="faleconosco">
+        <div class="perguntas-frequentes">
+            <h2>
+                Perguntas Frequentes:
+            </h2>
+            <ul>
+                <li><strong>O que fazer quando o jogo não abre?</strong>
+                    <p>Tente limpar o cachê do seu navegador. Depois, verifique se precisa atualizar o seu nevegador.
+                    </p>
+                </li>
+                <li><strong>As histórias são adequadas para todas as idades?</strong>
+                    <p>
+                    Sim, temos uma variedade de histórias adequadas para diferentes idades. 
+                    Temos histórias simples para crianças pequenas, assim como histórias mais complexas para crianças mais velhas.
+                    </p>
+                </li>
+                <li><strong>Como faço para sugerir um novo jogo ou história?</strong>
+                    <p>Adoramos ouvir sugestões dos nossos usuários! Se você tiver uma ideia para um novo jogo ou história, por favor, nos envie um e-mail através da seção de contato do site.</p>
+                </li>
+                <li><strong>Como faço para entrar em contato com o suporte em caso de problemas técnicos?</strong>
+                    <p>Se você estiver enfrentando problemas técnicos ou tiver dúvidas, entre em contato com nossa equipe de suporte técnico através da seção de contato do site. Estamos aqui para ajudar!</p>
+                </li>
+            </ul>
+        </div>
 
-        <h2>
-            Perguntas Frequentes:
-        </h2>
-        <ul>
-            <li>O que fazer quando o jogo não abre?
-                Tente limpar o cachê do seu navegador. Depois, verifique se precisa atualizar o seu nevegador.
-            </li>
-            <li>Segunda pergunta frequente e resposta</li>
-            <li>Terceira pergunta frequente e resposta</li>
-
-        </ul>
-        <h2>
-            Fale Conosco
-        </h2>
-        <label>
-            Nome:
-            <input type="text" />
-        </label>
-        <br />
-        <label>
-            E-mail:
-            <input type="email" />
-        </label>
-        <br />
-        <label>
-            Escreva sua dúvida:
+        <form class="form-perguntas">
+            <h2>
+                Fale Conosco:
+            </h2>
+            <label>
+                Nome:
+                <input type="text" />
+            </label>
             <br />
-            <textarea></textarea>
-        </label>
-        <br />
-        <button>Enviar</button>
+            <label>
+                E-mail:
+                <input type="email" />
+            </label>
+            <br />
+            <label>
+                Escreva sua dúvida:
+                <br />
+                <textarea></textarea>
+            </label>
+            <br />
+            <button>Enviar</button>
+        </form>
     </main>
-
-
-    <footer>
+    <footer id="footer">
         <nav>
-            <a href="/facebook">Facebook</a>
-            <a href="/instagram">Instagram</a>
-
+            <div>
+                <img src="/img/facebook.png" style="height: 25px;" alt="">
+                <a href="/facebook">Facebook</a>
+            </div>
+            <div>
+                <img src="/img/instagram.png" style="height: 25px;" alt="">
+                <a href="/instagram">Instagram</a>
+            </div>
         </nav>
-
-        <p>&copy; 2023 +Educa. Todos os direitos reservados.</p>
+        <p>&copy; 2024 +Educa. Todos os direitos reservados.</p>
     </footer>
 </body>
 
