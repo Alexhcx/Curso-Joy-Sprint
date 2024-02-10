@@ -110,9 +110,9 @@ nav li:hover{
 
 .body-background {
     background-image: url('/img/redwoodbackground.jpg');
-    background-repeat: no-repeat; /* A imagem de fundo não será repetida */
-    background-position: center; /* A imagem de fundo será centralizada */
-    background-size: cover; /* A imagem de fundo será redimensionada para cobrir todo o elemento */
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
 }
 
 .historias-main{
