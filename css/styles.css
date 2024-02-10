@@ -13,10 +13,16 @@
 }
 
 body{
-    /* background-color: rgba(10, 12, 81, 0.776); */
+
+    background-image: url('/img/BackgroundMagico6_upscaled_75.png');
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover;
+    background-attachment: fixed;
+
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100svh;
     justify-content: space-between;
 }
 
@@ -28,17 +34,18 @@ nav{
 
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 header{
     display: flex;
     justify-content: space-between;
     padding: 10px 5px 10px 5px;
-    background-color: rgb(10, 10, 85);
-    color:white;
-    border-bottom: 1px solid black;
+    background-color: rgba(245, 245, 245, 0);
+    color:black;
+    /* border-bottom: 1px solid black; */
 }
+
 header div{
     padding-left: 10px;
 }
@@ -76,7 +83,7 @@ nav li{
 }
 
 nav li:hover{
-    background-color: blue;
+    background-color: white;
     border-radius: 20px;
 }
 
@@ -326,7 +333,7 @@ textarea{
 .logo-quemsomos {
     display: block;
     margin: auto;
-    width: 18%;
+    width: 12%;
     padding: 40px;
 }
 
