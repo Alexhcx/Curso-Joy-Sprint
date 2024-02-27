@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/login.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-site">
+            <img src="/img/logo-site-editado.png" style="height: 30px;" alt="">
+            <h1>educa+</h1>
+        </div>
+        <nav>
+            <ol>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="/Paginas/quemsomos.html">Sobre</a></li>
+                <li><a href="/Paginas/jogos.html">Jogos</a></li>
+                <li><a href="/Paginas/historias.html">Histórias Contadas</a></li>
+                <li><a href="/Paginas/fale-conosco.html">Fale Conosco</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main class="main-cadastro">
+        <div class="form-options">
+            <h3 class="login-tab">login</h3>
+            <h3 class="cadastro-tab">cadastro</h3>
+        </div>
+
+        <form class="form-login">
+            <h2>EDUCA+</h2>
+            <div>
+                <label for="emailLogin">E-mail:</label><br>
+                <input type="email" id="emailLogin" placeholder="digite seu email"/>
+            </div>
+            <div>
+                <label for="passwordLogin">Senha:</label><br>
+                <input type="password" id="passwordLogin" placeholder="Digite sua senha."/>
+            </div>
+            <div class="button-submit">
+                <input type="submit" id="botaoLogin" value="Login">
+            </div>
+        </form>
+
+        <form class="form-cadastro">
+            <h2>EDUCA+</h2>
+            <div>
+                <label for="nomeCadastro">Nome:</label><br>
+                <input type="text" id="nomeCadastro" placeholder="digite seu nome."/>
+            </div>
+            <div>
+                <label for="Sobrenome">Sobrenome:</label><br>
+                <input type="text" id="Sobrenome" placeholder="digite seu sobrenome."/>
+            </div>
+            <div>
+                <label for="emailCadastro">E-mail:</label><br>
+                <input type="email" id="emailCadastro" placeholder="digite seu email."/>
+            </div>
+            <div>
+                <label for="dataNascimento">Data de nascimento:</label><br>
+                <input type="date" id="dataNascimento"/>
+            </div>
+            <div>
+                <label for="password">Senha:</label><br>
+                <input type="password" id="password" placeholder="Digite sua senha."/>
+            </div>
+            <div>
+                <label for="passwordRepeat">Repita senha:</label><br>
+                <input type="password" id="passwordRepeat" placeholder="Repita a senha."/>
+            </div>
+            <div class="passwordVerify">
+                <span class="password-style">
+                    <img src="" alt="">
+                    <p>Minimo de 6 caracteres.</p>
+                </span>
+                <span class="password-style">
+                    <img src="" alt="">
+                    <p>Caracteres Especiais (@ # % & ! $ Etc….).</p>
+                </span>
+                <span class="password-style">
+                    <img src="" alt="">
+                    <p>Numeros (1, 2, 3...).</p>
+                </span>
+                <span class="password-style">
+                    <img src="" alt="">
+                    <p>As senhas conferem.</p>
+                </span>
+            </div>
+            <div class="button-submit">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+
+    </main>
+    <footer id="footer">
+        <nav>
+            <div>
+                <img src="/img/facebook.png" style="height: 25px;" alt="">
+                <a href="/facebook">Facebook</a>
+            </div>
+            <div>
+                <img src="/img/instagram.png" style="height: 25px;" alt="">
+                <a href="/instagram">Instagram</a>
+            </div>
+        </nav>
+        <p>&copy; 2024 +Educa. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
