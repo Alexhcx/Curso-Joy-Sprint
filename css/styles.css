@@ -26,6 +26,12 @@ body{
     justify-content: space-between;
 }
 
+iframe{
+    border: 1px solid lightgray; 
+    width: 1024px;
+    height: 768px;
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -34,16 +40,16 @@ nav{
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 header{
     display: flex;
     justify-content: space-between;
     padding: 10px 5px 10px 5px;
-    background-color: rgba(245, 245, 245, 0);
-    color:black;
-    /* border-bottom: 1px solid black; */
+    background-color: rgba(0, 0, 0, 0.34);
+    color:white;
+    
 }
 
 header div{
@@ -87,6 +93,25 @@ nav li:hover{
     border-radius: 20px;
 }
 
+label{
+    font-weight: 700;
+}
+
+input{
+    min-width: 300px;
+    padding: 3px 3px 3px 4px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+textarea{
+    min-width: 400px; 
+    min-height: 300px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bolder;  
+}
+
 #footer{
     display: flex;
     flex-direction: column;
@@ -111,19 +136,25 @@ nav li:hover{
 }
 #footer nav div a{
     padding: 8px;
+    color: white;
 }
 
 /*-- Pagina: histotrias contadas --*/
 
 .body-background {
-    background-image: url('/img/redwoodbackground.jpg');
+    background-image: url('/img/redwoodbackground1.jpg');
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: cover; 
+    background-attachment: fixed;
+    display: flex;
+    justify-content: start;
 }
 
 .historias-main{
     display: flex;
+    align-items:start;
+    justify-content: space-between;
 }
 
 .historias-main aside{
@@ -148,92 +179,25 @@ nav li:hover{
 
 .aside-img{
     padding: 10px 10px 5px 10px;
-    border-radius: 100%;
+    height: 100%;
 }
 
 #livro-aberto{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-}
-
-#livro-aberto span{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow-wrap: break-word;
-    max-width: 55%; 
-    padding: 10px;
-    /* text-align: justify;
-    font-family: 'MedievalSharp', sans-serif;
-    font-size: 22px;
-    font-weight: 900; */
-}
-
-#livro-aberto span p {
-    text-align: justify;
-    font-family: 'MedievalSharp', sans-serif;
-    font-size: 1vw; /* Ajusta o tamanho da fonte para 2% da largura da janela */
-    font-weight: 900;
-}
-
-.livro-background-img{
-    z-index: 0;
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-
-.paginas-livro{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* width: 100%;
-    height: auto; */
-    position: absolute;
-    z-index: 1;
-}
-
-.paginas-livro div:nth-child(1){
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.paginas-livro div:nth-child(1) img{
-    margin-right: 23px
-}
-
-.paginas-livro div:nth-child(2){
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.paginas-livro img {
-    width: 50%;
-    height: auto;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-#historias-footer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-#historias-footer img {
-    object-fit: contain;
-    width: 80%;
-    height: 80%;
     margin: auto;
 }
+
+.livro-1 img, .livro-2 img, .livro-3 img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    padding: 10px;
+
+}
+
 /*-- fim Pagina: histotrias contadas --*/
 
 /*-- Pagina: fale conosco --*/
@@ -278,21 +242,6 @@ nav li:hover{
 
 .perguntas-frequentes li p{
     padding: 5px 0px 0px 0px;
-}
-
-input{
-    min-width: 300px;
-    padding: 2px;
-    font-size: 16px;
-    font-weight: bolder; 
-}
-
-textarea{
-    min-width: 400px; 
-    min-height: 300px;
-    padding: 10px;
-    font-size: 16px;
-    font-weight: bolder;  
 }
 
 /*--fim Pagina: fale conosco --*/
@@ -396,3 +345,104 @@ textarea{
 .historias-jogos p{
     padding: 5px;
 }
+
+/*-- Fim Pagina: Inicio --*/
+
+/*-- Pagina: cadastro/login --*/
+
+.main-cadastro{
+    margin: auto;
+}
+
+.form-login{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 30px 30px 30px 50px;
+    color:black;
+    background-color: white;
+    border-radius: 20px;
+    text-align: justify;
+    border: 4px solid black;
+
+}
+
+.form-cadastro{
+    display: none;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 30px 30px 30px 50px;
+    color:black;
+    background-color: white;
+    border-radius: 20px;
+    text-align: justify;
+    border: 4px solid black;
+}
+
+.form-login h2, .form-cadastro h2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5px ;
+}
+
+.form-login div, .form-cadastro div{
+    padding: 10px
+}
+
+.login-tab{
+    background-color: rgb(4, 55, 74);
+    size: 10px;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white 
+}
+
+.cadastro-tab{
+    background-color: white;
+    size: 10px;
+    padding: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.form-options{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.button-submit{
+    margin: auto;
+    margin-top: 20px;
+}
+
+.input-correct{
+    background-color: rgb(201, 253, 201);
+    border-color: rgb(57, 129, 57);
+}
+
+.input-incorrect{
+    background-color: rgb(253, 209, 209);
+    border-color: rgb(255, 72, 72);
+}
+
+.passwordVerify{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.password-style{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.password-style img{
+    margin-right: 5px;
+    height: 15px;
+} 
