@@ -1,0 +1,45 @@
+-- Inserindo dados na tabela usuarios
+INSERT INTO usuarios (nome, sobrenome, nome_usuario, email) VALUES
+('João', 'Silva', 'joaosilva', 'joao@email.com'),
+('Maria', 'Santos', 'msantos', 'maria@email.com'),
+('Pedro', 'Lima', 'plima', 'pedro@email.com'),
+('Ana', 'Souza', 'anasouza', 'ana@email.com'),
+('Lucas', 'Oliveira', 'loliveira', 'lucas@email.com');
+
+-- Inserindo dados na tabela jogos
+INSERT INTO jogos (nome_jogo, categoria) VALUES
+('Jogo de memoria', 'Memoria'),
+('Jogo das operações', 'Raciocinio'),
+('7 erros de português', 'Gramatica');
+
+-- Inserindo dados na tabela livros
+INSERT INTO livros (titulo_livro, autor) VALUES
+('Chapeuzinho Vermelho', 'Rosana MontAlvernee'),
+('Os três porquinhos', 'Marismar Borém'),
+('Branca de Neve', 'Ricardo Moreira Figueiredo Filho');
+
+-- Inserindo dados na tabela usuarios_jogos
+INSERT INTO usuarios_jogos (jogador_id_fk, jogo_id_fk, pontuacao, data_pontuacao) VALUES
+(1, 1, 150, '2024-02-21'),
+(1, 2, 90, '2024-01-29'),
+(1, 3, 110, '2024-02-23'),
+(2, 1, 110, '2024-03-01'),
+(2, 2, 80, '2024-02-29'),
+(2, 3, 90, '2024-01-28'),
+(3, 1, 150, '2024-03-04'),
+(3, 2, 100, '2024-02-24'),
+(3, 3, 80, '2024-01-22'),
+(4, 1, 120, '2024-03-05'),
+(4, 2, 90, '2024-02-22'),
+(4, 3, 70, '2024-01-21'),
+(5, 1, 100, '2024-03-01'),
+(5, 2, 120, '2024-02-28'),
+(5, 3, 120, '2024-01-19');
+
+-- Inserindo dados na tabela usuarios_livros
+INSERT INTO usuarios_livros (leitor_id_fk, livro_id_fk, nota, comentario, data_avaliacao) VALUES
+(1, 1, 4, 'Ótima história!', '2024-02-25'),
+(2, 2, 5, 'Adorei os personagens!', '2024-03-01'),
+(3, 3, 3, 'Interessante, mas esperava mais.', '2024-03-02'),
+(4, 1, 5, 'Clássico imperdível!', '2024-03-03'),
+(5, 2, 4, 'Bom para passar o tempo.', '2024-03-04');

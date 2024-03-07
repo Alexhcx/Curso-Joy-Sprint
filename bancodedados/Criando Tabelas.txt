@@ -1,0 +1,36 @@
+CREATE TABLE usuarios (
+    id_usuario SERIAL PRIMARY KEY,
+    nome VARCHAR(100),
+    sobrenome VARCHAR(100),
+    nome_usuario VARCHAR(100),
+    email VARCHAR(100) UNIQUE
+);
+
+CREATE TABLE jogos (
+    id_jogos SERIAL PRIMARY KEY,
+    nome_jogo VARCHAR(100),
+    categoria VARCHAR(100)
+);
+
+CREATE TABLE livros (
+    id_livros SERIAL PRIMARY KEY,
+    titulo_livro VARCHAR(100),
+    autor VARCHAR(100)
+);
+
+CREATE TABLE usuarios_jogos (
+    id_pontuacao SERIAL PRIMARY KEY,
+    jogador_id_fk INT REFERENCES usuarios(id_usuario),
+    jogo_id_fk INT REFERENCES jogos(id_jogos),
+    pontuacao INT,
+    data_pontuacao DATE
+);
+
+CREATE TABLE usuarios_livros (
+    id_avaliacao SERIAL PRIMARY KEY,
+    leitor_id_fk INT REFERENCES usuarios(id_usuario),
+    livro_id_fk INT REFERENCES livros(id_livros),
+    nota INT,
+    comentario VARCHAR(200),
+    data_avaliacao DATE
+);

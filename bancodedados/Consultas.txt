@@ -1,0 +1,27 @@
+--Consulta livros e suas avaliações por usuario e nome de livro.
+SELECT l.titulo_livro, ul.nota, ul.comentario, u.nome AS leitor
+FROM usuarios_livros ul
+JOIN livros l ON ul.livro_id_fk = l.id_livros
+JOIN usuarios u ON ul.leitor_id_fk = u.id_usuario;
+
+--Consulta dos jogos jogados por um usuário específico e suas pontuações:
+SELECT u.nome, j.nome_jogo, uj.pontuacao, uj.data_pontuacao
+FROM usuarios u
+JOIN usuarios_jogos uj ON u.id_usuario = uj.jogador_id_fk
+JOIN jogos j ON uj.jogo_id_fk = j.id_jogos
+WHERE u.id_usuario = 5;
+
+--Consulta dos livros avaliados por um usuário específico:
+SELECT u.nome, l.titulo_livro, ul.nota, ul.comentario, ul.data_avaliacao
+FROM usuarios u
+JOIN usuarios_livros ul ON u.id_usuario = ul.leitor_id_fk
+JOIN livros l ON ul.livro_id_fk = l.id_livros
+WHERE u.id_usuario = 1;
+
+--consultar um jogo especifico e que apareça o nome do jogador sua pontuação e sejam organizados do maior para o menor:
+SELECT u.nome AS nome_jogador, j.nome_jogo, uj.pontuacao
+FROM usuarios_jogos uj
+JOIN usuarios u ON uj.jogador_id_fk = u.id_usuario
+JOIN jogos j ON uj.jogo_id_fk = j.id_jogos
+WHERE uj.jogo_id_fk = 3
+ORDER BY uj.pontuacao DESC;
