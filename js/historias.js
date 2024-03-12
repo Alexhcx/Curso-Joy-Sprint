@@ -7,13 +7,13 @@ let atividadesRecentes = document.querySelector(".atividades-recentes")
 
 
 let livros = {
-    livro_1: "/img/Livro-capa-chapeuzinho.png",
+    livro_1: "/img/capas/CapaChapeuzinho.png",
     titulo_1:"Chapeuzinho Vermelho",
 
-    livro_2: "/img/Livro-capa-brancadeneve.png",
+    livro_2: "/img/capas/CapaBrancadeneve.png",
     titulo_2:"Branca de Neve",
 
-    livro_3: "/img/livro-capa-tresporquinhos.png",
+    livro_3: "/img/capas/CapaTresporquinhos.png",
     titulo_3:"Os Três Porquinhos",
 }
 
