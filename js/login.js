@@ -6,16 +6,16 @@ let cadastroForm = document.querySelector(".form-cadastro");
 let usuarios = [];
 
 let nomeLoginInput = document.querySelector("#nomeLogin");
-let emailLoginInput = document.querySelector("#emailLogin")
-let botaoSubmit = document.querySelector("#botaoLogin")
+let emailLoginInput = document.querySelector("#emailLogin");
+let botaoSubmit = document.querySelector("#botaoLogin");
 
-let nomeCadastroInput = document.querySelector("#nomeCadastro")
-let sobrenomeCadastroInput = document.querySelector("#Sobrenome")
-let emailCadastroInput = document.querySelector("#emailCadastro")
+let nomeCadastroInput = document.querySelector("#nomeCadastro");
+let sobrenomeCadastroInput = document.querySelector("#Sobrenome");
+let emailCadastroInput = document.querySelector("#emailCadastro");
 let dataNascimento = document.querySelector("#dataNascimento");
-let senha = document.querySelector("#password")
-let confirmaSenha = document.querySelector("#passwordRepeat")
-let msgSenhas= document.querySelectorAll(".passwordVerify span")
+let senha = document.querySelector("#password");
+let confirmaSenha = document.querySelector("#passwordRepeat");
+let msgSenhas= document.querySelectorAll(".passwordVerify span");
 
 function mostrarUsuario(){
     let barraNav = document.querySelector("nav ol");
@@ -72,7 +72,7 @@ function verificarCaracteresEsp(elemento){
         msgAlerta.style.color = "red";
         msgAlerta.style.fontSize = "13px";
         msgAlerta.style.margin = "2px";
-    } else{
+    }else{
         elemento.classList.add("input-correct");
         msgAlerta.textContent = "";
     }

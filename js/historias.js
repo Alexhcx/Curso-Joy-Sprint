@@ -1,9 +1,9 @@
-let estantes = document.querySelectorAll("#livro-aberto div")
-let iframeDisplay = document.querySelector("#livro-aberto")
-let asideImg = document.querySelector(".aside-img")
-let tituloP = document.querySelector(".tituloP")
-let tituloSB = document.querySelector(".tituloSb")
-let atividadesRecentes = document.querySelector(".atividades-recentes")
+let estantes = document.querySelectorAll("#livro-aberto div");
+let iframeDisplay = document.querySelector("#livro-aberto");
+let asideImg = document.querySelector(".aside-img");
+let tituloP = document.querySelector(".tituloP");
+let tituloSB = document.querySelector(".tituloSb");
+let atividadesRecentes = document.querySelector(".atividades-recentes");
 
 
 let livros = {
@@ -15,13 +15,13 @@ let livros = {
 
     livro_3: "/img/capas/CapaTresporquinhos.png",
     titulo_3:"Os Três Porquinhos",
-}
+};
 
 let iframeLivros = {
     iframe_1: '<iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/b1d5592436.html"></iframe>',
     iframe_2: '<iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/60f1e6b25a.html"></iframe>',
     iframe_3: '<iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/d2c90d11a3.html"></iframe>'
-}
+};
 
 function mostrarUsuario(){
     let barraNav = document.querySelector("nav ol");
@@ -34,7 +34,7 @@ function mostrarUsuario(){
     
     item.appendChild(link);
     barraNav.appendChild(item);
-}
+};
 
 for (let i = 0; i < estantes.length; i++) {
     let capas = document.createElement('img');
@@ -63,6 +63,6 @@ for (let i = 0; i < estantes.length; i++) {
     });
 
     estantes[i].appendChild(capas);
-}
+};
 
 mostrarUsuario();

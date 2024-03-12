@@ -5,7 +5,7 @@ let link = document.createElement("a");
 
 link.href = "/Paginas/cadastro.html";
 link.textContent = "login";
-link.classList.add("hvr-grow")
+link.classList.add("hvr-grow");
 
 item.appendChild(link);
 barraNav.appendChild(item);

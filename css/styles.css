@@ -48,7 +48,6 @@ header{
     justify-content: space-between;
     padding: 10px 5px 10px 5px;
     color:white;
-    
 }
 
 header div{
@@ -87,31 +86,6 @@ nav li{
     text-shadow: var(--text-shadow);
 }
 
-.hvr-grow {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-  }
-  
-  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-
-/* nav li:hover{
-    border-radius: 20px;
-    background: rgba(114, 241, 250, 0.397);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8.5px);
-    -webkit-backdrop-filter: blur(8.5px);
-} */
-
 label{
     font-weight: 700;
 }
@@ -131,16 +105,20 @@ textarea{
     font-weight: bolder;  
 }
 
-#footer{
+footer{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(10, 10, 85);
+    background: linear-gradient(0deg, rgba(131,124,255,0.75) 0%, rgba(82,96,180,0.75) 37%, rgba(0,212,255,0.75) 100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
     color: white;
+    text-shadow: 1px 1px 2px black;
 }
 
-#footer nav{
+footer nav{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -148,25 +126,42 @@ textarea{
     margin: 20px;
 }
 
-#footer nav div{
+footer nav div{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#footer nav div a{
+footer nav div a{
     padding: 8px;
     color: white;
 }
 
 .glass-bg{
-    background: rgba(105, 213, 211, 0.468);
+    background: rgba(105, 213, 211, 0.25);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8.5px);
     -webkit-backdrop-filter: blur(8.5px);
 }
 
+.hvr-grow {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
 
-/*-- Pagina: histotrias contadas --*/
+  .hvr-grow:hover, 
+  .hvr-grow:focus, 
+  .hvr-grow:active{
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    z-index: 1;
+  }
+
+/*-- Pagina: historias--*/
 
 .body-background {
     background-image: url('/img/redwoodbackground1.jpg');
@@ -222,7 +217,6 @@ textarea{
     justify-content: center;
     height: 500px;
     padding: 10px;
-
 }
 
 /*-- fim Pagina: histotrias contadas --*/
@@ -243,9 +237,13 @@ textarea{
     margin: 20px 20px 20px 20px;
     padding: 30px 30px 30px 50px;
     color:white;
-    background-color: rgb(4, 55, 74);
+    background: linear-gradient(0deg, rgba(131,124,255,0.75) 0%, rgba(82,96,180,0.75) 37%, rgba(0,212,255,0.75) 100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
     border-radius: 20px;
     text-align: justify;
+    text-shadow: 1px 1px 2px black;
 }
 
 .form-perguntas{
@@ -254,9 +252,13 @@ textarea{
     margin: 20px 20px 20px 20px;
     padding: 30px 30px 30px 50px;
     color:white;
-    background-color: rgb(4, 55, 74);
+    background: linear-gradient(0deg, rgba(131,124,255,0.75) 0%, rgba(82,96,180,0.75) 37%, rgba(0,212,255,0.75) 100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
     border-radius: 20px;
     text-align: justify;
+    text-shadow: 1px 1px 2px black;
 }
 
 .form-perguntas h2, .perguntas-frequentes h2 {
@@ -273,24 +275,33 @@ textarea{
 
 /*--fim Pagina: fale conosco --*/
 
-/*-- Pagina: Sobre nos --*/
+/*-- Pagina: Sobre--*/
 
 #main-quemsomos {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 20px;
-    /* align-items: center; */
+    grid-template-columns: repeat(5, 250px);
+    grid-template-rows: repeat(1, 250px);
+    grid-gap: 75px;
     justify-content: center;
     padding: 10px;
 }
 
+.text-size{
+    font-size: 14px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.title-size{
+    font-size: 17px;
+    text-shadow: 1px 1px 2px black;
+}
+
 #main-quemsomos section{
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
     padding: 10px;
-    background-color: rgb(4, 55, 74);
+    background: linear-gradient(0deg, rgba(131,124,255,0.75) 0%, rgba(82,96,180,0.75) 37%, rgba(0,212,255,0.75) 100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
     color: white;
     border-radius: 10px;
 }
@@ -329,8 +340,12 @@ textarea{
     margin: auto;
     width: 30%;
     text-align: justify;
-    background-color: rgb(4, 55, 74);
+    background: linear-gradient(0deg, rgba(131,124,255,0.75) 0%, rgba(82,96,180,0.75) 37%, rgba(0,212,255,0.75) 100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
     color: white;
+    text-shadow: 1px 1px 2px black;
     padding: 20px;
     border-radius: 20px;
 }
