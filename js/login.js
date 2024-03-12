@@ -25,6 +25,7 @@ function mostrarUsuario(){
     
     link.href = "/Paginas/cadastro.html";
     link.textContent = "login";
+    link.classList.add("hvr-grow")
     
     item.appendChild(link);
     barraNav.appendChild(item);
