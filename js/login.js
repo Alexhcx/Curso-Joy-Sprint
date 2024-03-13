@@ -24,7 +24,7 @@ function mostrarUsuario(){
     let link = document.createElement("a");
     
     link.href = "/Paginas/cadastro.html";
-    link.textContent = "login";
+    link.textContent = "Login";
     link.classList.add("hvr-grow")
     
     item.appendChild(link);

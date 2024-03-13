@@ -27,6 +27,9 @@ body{
 }
 
 iframe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid lightgray; 
     width: 1024px;
     height: 768px;
@@ -156,10 +159,19 @@ footer nav div a{
   .hvr-grow:hover, 
   .hvr-grow:focus, 
   .hvr-grow:active{
-    -webkit-transform: scale(1.15);
-    transform: scale(1.15);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
     z-index: 1;
   }
+
+.bg-glass{
+    background: linear-gradient(0deg, rgba(131,124,255,0.75) 0%, rgba(82,96,180,0.75) 37%, rgba(0,212,255,0.75) 100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
 
 /*-- Pagina: historias--*/
 
@@ -217,6 +229,26 @@ footer nav div a{
     justify-content: center;
     height: 500px;
     padding: 10px;
+}
+
+.botaoVoltar{
+    padding: 10px;
+
+    button{
+        background: linear-gradient(0deg, rgba(131,124,255,0.75) 0%, rgba(82,96,180,0.75) 37%, rgba(0,212,255,0.75) 100%);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8.5px);
+        -webkit-backdrop-filter: blur(8.5px);
+        padding: 10px;
+        color:white
+    }
+}
+
+.divIframe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /*-- fim Pagina: histotrias contadas --*/
@@ -361,7 +393,8 @@ footer nav div a{
     display: block;
     margin: auto;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
+    margin: 15px;
 }
 
 .historias-section{
@@ -402,11 +435,11 @@ footer nav div a{
     align-content: center;
     flex-direction: column;
     padding: 30px 30px 30px 50px;
-    color:black;
+    color:white;
     background-color: white;
     border-radius: 20px;
     text-align: justify;
-    border: 4px solid black;
+    border: 4px solid white;
 
 }
 
@@ -416,11 +449,11 @@ footer nav div a{
     align-content: center;
     flex-direction: column;
     padding: 30px 30px 30px 50px;
-    color:black;
+    color: white;
     background-color: white;
     border-radius: 20px;
     text-align: justify;
-    border: 4px solid black;
+    border: 4px solid white;
 }
 
 .form-login h2, .form-cadastro h2{

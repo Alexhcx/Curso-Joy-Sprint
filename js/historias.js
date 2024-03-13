@@ -5,6 +5,17 @@ let tituloP = document.querySelector(".tituloP");
 let tituloSB = document.querySelector(".tituloSb");
 let atividadesRecentes = document.querySelector(".atividades-recentes");
 
+let divButton = document.createElement('div');
+let backButton = document.createElement('button');
+
+divButton.appendChild(backButton)
+
+backButton.textContent = 'Voltar';
+divButton.classList.add("botaoVoltar");
+
+backButton.addEventListener('click', function() {
+    window.location.href = '/Paginas/historias.html';
+});
 
 let livros = {
     livro_1: "/img/capas/CapaChapeuzinho.png",
@@ -30,7 +41,7 @@ function mostrarUsuario(){
     let link = document.createElement("a");
     
     link.href = "/Paginas/cadastro.html";
-    link.textContent = "login";
+    link.textContent = "Login";
     
     item.appendChild(link);
     barraNav.appendChild(item);
@@ -44,6 +55,9 @@ for (let i = 0; i < estantes.length; i++) {
     capas.addEventListener('click', function() {
         let divParaIframe = document.createElement('div');
         divParaIframe.innerHTML = iframeLivros['iframe_' + (i + 1)];
+
+        divParaIframe.appendChild(divButton)
+        divParaIframe.classList.add("divIframe")
 
         iframeDisplay.appendChild(divParaIframe);
 
@@ -64,5 +78,6 @@ for (let i = 0; i < estantes.length; i++) {
 
     estantes[i].appendChild(capas);
 };
+
 
 mostrarUsuario();
